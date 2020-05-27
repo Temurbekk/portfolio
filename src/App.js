@@ -1,60 +1,29 @@
-import React, { Component } from 'react';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './pages/Main';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import './App.css';
-import { Link } from 'react-router-dom';
+import About from "./Components/Pages/About";
+import Projects from "./Components/Pages/Projects";
+import Experience from "./Components/Pages/Experience";
+import Contact from "./Components/Pages/Contact";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
-        <div className='demo-big-content'>
-          <Layout>
-            <Header
-              className='header-color'
-              title={
-                <Link
-                  style={{ textDecoration: 'none', color: 'white' }}
-                  to='/portfolio'
-                >
-                  temur
-                </Link>
-              }
-              scroll
-            >
-              <Navigation>
-                <Link to='/About'>About</Link>
-                <Link to='/Projects'>Projects</Link>
-                <Link to='/Contact'>Contact</Link>
-              </Navigation>
-            </Header>
-            <Drawer
-              className='mdl-layout__drawer'
-              Drawer
-              title={
-                <Link style={{ textDecoration: 'none', color: 'black' }} to='/'>
-                  temur
-                </Link>
-              }
-            >
-              <Navigation>
-                <Link to='/About'>About</Link>
+import NavBar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
-                <Link to='/Projects'>Projects</Link>
-                <Link to='/Contact'>Contact</Link>
-              </Navigation>
-            </Drawer>
-            <Content>
-              <div className='page-content' />
-              <Main />
-            </Content>
-          </Layout>
-        </div>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={About} />
+          <Route path="/Projects" component={Projects} />
+          <Route path="/Experience" component={Experience} />
+          <Route path="/Contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </Router>
+    </>
+  );
+};
 
 export default App;
