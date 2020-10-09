@@ -13,14 +13,15 @@ const Experiences = () => {
         </Fade>
       </h1>
       <div className="columns">
-        {data.projects.map((project) => (
+        {data.experiences.map((experience) => (
           <div className="column">
             <Experience
-              key={project.id}
-              title={project.title}
-              service={project.service}
-              imageSrc={project.imageSrc}
-              url={project.url}
+              key={experience.id}
+              title={experience.title}
+              technologies={experience.technologies}
+              imageSrc={experience.imageSrc}
+              url={experience.url}
+              description={experience.description}
             />
           </div>
         ))}

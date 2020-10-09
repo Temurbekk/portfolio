@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 const Project = ({ url, imageSrc, title, service }) => {
   return (
     <Fade bottom>
-      <div className="project">
+      <div className="column">
         <a href={url}>
           <img src={imageSrc} alt={title}></img>
         </a>
