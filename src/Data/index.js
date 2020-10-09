@@ -1,18 +1,6 @@
 export default {
-  //(Please Do Not Remove The comma(,) after every variable)
-  //Change The Website Template
   name: "iTemur",
-  headerTagline: [
-    //Line 1 For Header
-    "Hello",
-    //Line 2 For Header
-    "My name is Temurbek Sabirov",
-    //Line 3 For Header
-    "I am a Software Engineer",
-  ],
-  //Contact Email
-  contactEmail: "temurbeksab98@gmail.com",
-  // Add Your About Text Here
+
   about: [
     {
       id: 1,
@@ -37,22 +25,19 @@ export default {
   ],
 
   aboutImage: "../assets/profile_pic.png",
-  //Change This To Hide The Image of About Section (True Or False)
-  ShowAboutImage: true, //true or false (Change Here)
-  // Change Projects Here
+  ShowAboutImage: true,
+
   projects: [
     {
-      id: 1, //DO NOT CHANGE THIS (Please)😅
-      title: "Project One", //Project Title - Add Your Project Title Here
-      service: "UI/UX Design", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
+      id: 1,
+      title: "Project One",
+      service: "UI/UX Design",
       imageSrc:
         "https://images.unsplash.com/photo-1558104631-0fa41a8f6c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      //Project URL - Add Your Project Url Here
       url: "http://chetanverma.com/",
     },
     {
-      id: 2, //DO NOT CHANGE THIS (Please)😅
+      id: 2,
       title: "Project Two",
       service: "Website Development",
       imageSrc:
@@ -60,7 +45,7 @@ export default {
       url: "http://chetanverma.com/",
     },
     {
-      id: 3, //DO NOT CHANGE THIS (Please)😅
+      id: 3,
       title: "Project Three",
       service: "Web App",
       imageSrc:
@@ -68,7 +53,7 @@ export default {
       url: "http://chetanverma.com/",
     },
     {
-      id: 4, //DO NOT CHANGE THIS (Please)😅
+      id: 4,
       title: "Project Four",
       service: "Branding",
       imageSrc:
@@ -77,7 +62,6 @@ export default {
     },
   ],
   social: [
-    // Add Or Remove The Link Accordingly
     {
       name: "Github",
       url: "https://github.com/Temurbekk",
