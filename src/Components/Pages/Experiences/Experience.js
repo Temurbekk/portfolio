@@ -2,7 +2,14 @@ import React from "react";
 
 import Fade from "react-reveal/Fade";
 
-const Experience = ({ url, imageSrc, title, technologies, description }) => {
+const Experience = ({
+  url,
+  imageSrc,
+  title,
+  technologies,
+  description,
+  job,
+}) => {
   return (
     <Fade bottom>
       <div className="card">
@@ -17,7 +24,8 @@ const Experience = ({ url, imageSrc, title, technologies, description }) => {
               <p className="title is-4">
                 <a href={url}>{title}</a>
               </p>
-              <p className="subtitle is-6">{technologies}</p>
+              <p className="subtitle is-6">Job Title: {job}</p>
+              <p className="subtitle is-6">Technologies: {technologies}</p>
             </div>
           </div>
 

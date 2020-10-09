@@ -66,6 +66,7 @@ export default {
     {
       id: 1,
       title: "StableBio",
+      job: "Software Engineer Intern",
       technologies: "React Native, Material UI",
       description:
         "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. As well as implemented data fetching from various APIs. Directly reported to the CTO",
@@ -76,6 +77,7 @@ export default {
     {
       id: 2,
       title: "Keko Box",
+      job: "Software Engineer Intern",
       technologies: "React, TypeScript, Go, Buffalo, PostgreSQL, Auth0",
       description:
         "Implemented the logout functionality using Auth0. Created components to see recently fulfilled orders. Implemented backend endpoints to retreive recently fulfilled orders. Performed a database migration to get par levels",
@@ -86,6 +88,7 @@ export default {
     {
       id: 3,
       title: "Errunds",
+      job: "Software Engineer Intern",
       technologies: "React, Material UI, Apollo GraphQL",
       description:
         "Worked alongside with another intern to create the admin site for the company to manage their businesses and customers. Used React functional components to create the web app. Used Material UI to design and make it responsive. Fetched data from the backend using Apollo GraphQL",
@@ -96,6 +99,7 @@ export default {
     {
       id: 4,
       title: "ACME PRO ACADEMY",
+      job: "Course Instructor",
       technologies: "Java, MySQL, Unix, Selenium",
       description:
         "Teaching 5 students in a small course to become QA engineers. Taught them the fundamentals and as well as Object Oriented aspects of Java. Taught them fundamentals and advanced techniques in MySQL. Taught them a whole month of Selenium for automation testing",

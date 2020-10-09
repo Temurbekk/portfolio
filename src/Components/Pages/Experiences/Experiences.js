@@ -21,6 +21,7 @@ const Experiences = () => {
               technologies={experience.technologies}
               imageSrc={experience.imageSrc}
               url={experience.url}
+              job={experience.job}
               description={experience.description}
             />
           </div>
