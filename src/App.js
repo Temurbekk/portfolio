@@ -5,15 +5,17 @@ import "./App.css";
 
 import Routes from "./Components/Routes";
 import NavBar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Router>
         <NavBar />
         <Routes />
+        <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 

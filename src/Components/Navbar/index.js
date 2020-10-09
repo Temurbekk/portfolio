@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar " role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <h1 className="title is-size-1">temur</h1>
+          <h1 className="title is-size-1">iTemur</h1>
         </Link>
 
         <div
@@ -22,9 +22,6 @@ const NavBar = () => {
       </div>
       <div className={`navbar-menu ${menuIsDisplayed ? "is-active" : ""}`}>
         <div className="navbar-end">
-          <Link to="/about" className="navbar-item">
-            About
-          </Link>
           <Link to="/projects" className="navbar-item">
             Projects
           </Link>
