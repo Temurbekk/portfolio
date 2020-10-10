@@ -33,47 +33,47 @@ export default {
       title: "fit-pal",
       service: "UI/UX Design",
       imageSrc:
-        "https://images.unsplash.com/photo-1558104631-0fa41a8f6c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      url: "http://chetanverma.com/",
+        "https://github.com/fit-pal/my-workout-tracker/blob/master/assets/img1.png?raw=true",
+      url: "https://my-workout-tracker-8763c.web.app/",
     },
     {
       id: 2,
       title: "tracked",
       service: "Website Development",
       imageSrc:
-        "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      url: "http://chetanverma.com/",
+        "https://github.com/ajilk/tracked/blob/master/docs/assets/mockups/cover.png?raw=true&w=1350&q=80",
+      url: "https://ajilk.com/tracked/",
     },
     {
       id: 3,
       title: "Covid 404",
       service: "Web App",
       imageSrc:
-        "https://images.unsplash.com/photo-1511500118080-275313ec90a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      url: "http://chetanverma.com/",
+        "https://www.ifri.org/sites/default/files/styles/vignette_share/public/thumbnails/image/shutterstock_1663374028.jpg?itok=HTbE4jEB",
+      url: "https://github.com/Temurbekk/Covid-404",
     },
     {
       id: 4,
       title: "Student Dashboard",
       service: "Branding",
       imageSrc:
-        "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      url: "http://chetanverma.com/",
+        "https://github.com/Temurbekk/Student-Dashboard/blob/master/images/Search:Landing%20Page.png?raw=true",
+      url: "https://github.com/Temurbekk/Student-Dashboard",
     },
     {
       id: 5,
       title: "Registrar Database",
       service: "Branding",
       imageSrc:
-        "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      url: "http://chetanverma.com/",
+        "https://supertecnodroid.com/wp-content/uploads/2019/04/java-mysql-conexion-1024x576.jpg",
+      url: "https://github.com/Temurbekk/Registrar-Database",
     },
     {
       id: 6,
       title: "portfolio",
       service: "Branding",
       imageSrc:
-        "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       url: "http://chetanverma.com/",
     },
   ],

@@ -23,7 +23,7 @@ const phantomStyle = {
   width: "100%",
 };
 
-function Footer({ children }) {
+function Footer() {
   return (
     <div>
       <div style={phantomStyle} />
