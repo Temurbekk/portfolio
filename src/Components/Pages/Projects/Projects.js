@@ -18,6 +18,8 @@ const Projects = () => {
             <Project
               key={project.id}
               title={project.title}
+              technologies={project.technologies}
+              description={project.description}
               service={project.service}
               imageSrc={project.imageSrc}
               url={project.url}
