@@ -20,7 +20,7 @@ const About = () => {
         <div className="column">
           <h1>
             <Fade bottom cascade>
-              Hello, My name is Temur.
+              Hello, My name is Temurbek.
             </Fade>
           </h1>
           <Fade bottom>
