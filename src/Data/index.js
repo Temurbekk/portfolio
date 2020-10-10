@@ -34,7 +34,7 @@ export default {
       service: "Website",
       technologies: "React, Material UI, Firebase, Youtube API",
       description:
-        "My 3 teammates and I managed to put together a serverless web application that allows users to sign in and track their workouts. The frontend of the application is created using React Framework and designed using Material UI components. The backend solely depends on Firebase Real Time Database. The authentication made possible using Firebase Auth. Also, made use of the Youtube API to have a separate page for users to see how the workouts are done correctly. The search bar that looks for videos has a sctrict mode that will not allow users to search for anything else other than the workout videos.",
+        "My three teammates and I managed to put together a serverless web application that allows users to sign in and track their workouts. The frontend of the application is created using React Framework and designed using Material UI components. The backend solely depends on Firebase Real Time Database. The authentication made possible using Firebase Auth. Also, made use of the Youtube API to have a separate page for users to see how the workouts are done correctly. The search bar that looks for videos has a sctrict mode that will not allow users to search for anything else other than the workout videos.",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/fit-pal.png?raw=true",
       url: "https://my-workout-tracker-8763c.web.app/",
@@ -45,13 +45,24 @@ export default {
       service: "Mobile App",
       technologies: "Flutter, Firebase",
       description:
-        "My two college classmates and managed to create our very first Cross Platform Mobile Application using the Flutter SDK. The application's main idea is to track DEO assets. The technologies that local schools lend to their students and staff. This app is used to track those technologies. The app uses Firestore as a server to store all the data. It also uses Firebase auth to authenticate users and depending on what school the user works at, application will show only the data from that school",
+        "My two college classmates I and managed to create our very first Cross Platform Mobile Application using the Flutter SDK. The application's main idea is to track DEO assets. The technologies that local schools lend to their students and staff. This app is used to track those technologies. The app uses Firestore as a server to store all the data. It also uses Firebase auth to authenticate users and depending on what school the user works at, application will show only the data from that school",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/tracked.png?raw=true",
       url: "https://ajilk.com/tracked/",
     },
     {
       id: 3,
+      title: "portfolio",
+      service: "Website",
+      technologies: "React, Bulma",
+      description:
+        "This is my personal portfolio website. I created it to showcase my passion for technology by sharing my most proud projects and experiences. Also, using this website, you can reach out to me on the contact page",
+      imageSrc:
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Portfolio.png?raw=true",
+      url: "http://chetanverma.com/",
+    },
+    {
+      id: 4,
       title: "Covid 404",
       service: "Website",
       technologies: "React, Grommet, APIs",
@@ -62,7 +73,7 @@ export default {
       url: "https://github.com/Temurbekk/Covid-404",
     },
     {
-      id: 4,
+      id: 5,
       title: "Student Dashboard",
       service: "Web App",
       technologies: "React, Spring Boot, Bulma",
@@ -73,7 +84,7 @@ export default {
       url: "https://github.com/Temurbekk/Student-Dashboard",
     },
     {
-      id: 5,
+      id: 6,
       title: "Registrar Database",
       service: "Java to MySQL interpreter",
       technologies: "Java, MySQL",
@@ -82,17 +93,6 @@ export default {
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/registrar-db.jpeg?raw=true",
       url: "https://github.com/Temurbekk/Registrar-Database",
-    },
-    {
-      id: 6,
-      title: "portfolio",
-      service: "Website",
-      technologies: "React, Bulma",
-      description:
-        "This is my personal portfolio website. I created it to showcase my passion for technology by sharing my most proud projects and experiences. Also, using this website, you can reach out to me on the contact page",
-      imageSrc:
-        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Portfolio.png?raw=true",
-      url: "http://chetanverma.com/",
     },
   ],
 

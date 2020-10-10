@@ -15,11 +15,13 @@ const Project = ({
         <a href={url}>
           <img src={imageSrc} alt={title} width="100%" height="50%" />
         </a>
-        <h1>{title}</h1>
-        <span>{service}</span>
-        <h1>{technologies}</h1>
+        <h1 className="title is-1">
+          <a href={url}>{title}</a>
+        </h1>
+        <h2 className="subtitle is-3">{service}</h2>
+        <h3 className="subtitle is-5">Technologies: {technologies}</h3>
 
-        <h1>{description}</h1>
+        <h4 className="is-medium">{description}</h4>
       </div>
     </Fade>
   );
