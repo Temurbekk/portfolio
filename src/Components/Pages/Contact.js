@@ -8,7 +8,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const { register, errors } = useForm();
+  const { register } = useForm();
 
   const clearHooks = () => {
     setName("");

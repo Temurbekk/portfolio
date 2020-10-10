@@ -27,23 +27,18 @@ function Footer() {
   return (
     <div>
       <div style={phantomStyle} />
-      <div className="level" style={footerStyle}>
-        <div className="level-left">
-          <h1>iTemur 2020</h1>
-        </div>
-        <div className="level-right">
-          {data.social.map((link, index) => (
-            <a
-              key={index}
-              className="level-item has-text-centered"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={link.url}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
+      <div style={footerStyle}>
+        {data.social.map((link, index) => (
+          <a
+            className="mr-5"
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={link.url}
+          >
+            {link.name}
+          </a>
+        ))}
       </div>
     </div>
   );

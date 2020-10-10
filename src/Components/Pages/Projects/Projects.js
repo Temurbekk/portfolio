@@ -14,7 +14,7 @@ const Projects = () => {
       </h1>
       <div className="columns is-multiline is-mobile is-centered">
         {data.projects.map((project) => (
-          <div className="column is-half">
+          <div className="column is-full">
             <Project
               key={project.id}
               title={project.title}

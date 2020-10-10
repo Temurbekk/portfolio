@@ -12,11 +12,7 @@ const About = () => {
           <Fade left>
             <figure className="image is-320x640">
               {data.ShowAboutImage ? (
-                <img
-                  className="is-rounded"
-                  src={profilePic}
-                  alt="about image"
-                />
+                <img className="is-rounded" src={profilePic} alt="Profile" />
               ) : null}
             </figure>
           </Fade>

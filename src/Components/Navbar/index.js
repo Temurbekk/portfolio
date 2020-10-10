@@ -6,7 +6,7 @@ const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
   return (
     <nav
-      className="navbar has-shadow"
+      className="navbar has-shadow mobile"
       role="navigation"
       aria-label="main navigation"
     >

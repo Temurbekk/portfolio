@@ -21,7 +21,7 @@ const Project = ({
         <h2 className="subtitle is-3">{service}</h2>
         <h3 className="subtitle is-5">Technologies: {technologies}</h3>
 
-        <h4 className="is-medium">{description}</h4>
+        <h4 className="subtitle is-6">{description}</h4>
       </div>
     </Fade>
   );

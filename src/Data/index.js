@@ -1,6 +1,4 @@
 export default {
-  name: "iTemur",
-
   about: [
     {
       id: 1,
