@@ -5,7 +5,7 @@ import data from "../../Data";
 const footerStyle = {
   backgroundColor: "white",
   fontSize: "20px",
-  color: "white",
+  color: "black",
   borderTop: "1px solid #E7E7E7",
   textAlign: "center",
   padding: "20px",
@@ -28,7 +28,9 @@ function Footer({ children }) {
     <div>
       <div style={phantomStyle} />
       <div className="level" style={footerStyle}>
-        <div className="level-left"></div>
+        <div className="level-left">
+          <h1>iTemur 2020</h1>
+        </div>
         <div className="level-right">
           {data.social.map((link, index) => (
             <a

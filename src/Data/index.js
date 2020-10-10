@@ -30,7 +30,7 @@ export default {
   projects: [
     {
       id: 1,
-      title: "Project One",
+      title: "fit-pal",
       service: "UI/UX Design",
       imageSrc:
         "https://images.unsplash.com/photo-1558104631-0fa41a8f6c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -38,7 +38,7 @@ export default {
     },
     {
       id: 2,
-      title: "Project Two",
+      title: "tracked",
       service: "Website Development",
       imageSrc:
         "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -46,7 +46,7 @@ export default {
     },
     {
       id: 3,
-      title: "Project Three",
+      title: "Covid 404",
       service: "Web App",
       imageSrc:
         "https://images.unsplash.com/photo-1511500118080-275313ec90a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -54,7 +54,23 @@ export default {
     },
     {
       id: 4,
-      title: "Project Four",
+      title: "Student Dashboard",
+      service: "Branding",
+      imageSrc:
+        "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      url: "http://chetanverma.com/",
+    },
+    {
+      id: 5,
+      title: "Registrar Database",
+      service: "Branding",
+      imageSrc:
+        "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      url: "http://chetanverma.com/",
+    },
+    {
+      id: 6,
+      title: "portfolio",
       service: "Branding",
       imageSrc:
         "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",

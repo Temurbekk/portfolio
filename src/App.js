@@ -12,6 +12,7 @@ function App() {
     <div className="container">
       <Router>
         <NavBar />
+        <br />
         <Routes />
         <Footer />
       </Router>

@@ -9,12 +9,12 @@ const Projects = () => {
     <div>
       <h1 className="heading">
         <Fade bottom cascade>
-          Projects
+          <h1 className="title">Projects</h1>
         </Fade>
       </h1>
       <div className="columns is-multiline is-mobile is-centered">
         {data.projects.map((project) => (
-          <div className="column">
+          <div className="column is-half">
             <Project
               key={project.id}
               title={project.title}
