@@ -9,7 +9,7 @@ const Experiences = () => {
     <div>
       <h1 className="heading">
         <Fade bottom cascade>
-          <h1 className="title">Experience</h1>
+          <h1 className="title">Experiences</h1>
         </Fade>
       </h1>
       <div className="columns">

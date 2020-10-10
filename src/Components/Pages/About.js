@@ -9,11 +9,17 @@ const About = () => {
     <div>
       <div className="columns about-content">
         <div className="column">
-          <figure className="image is-320x640">
-            {data.ShowAboutImage ? (
-              <img className="is-rounded" src={profilePic} alt="about image" />
-            ) : null}
-          </figure>
+          <Fade left>
+            <figure className="image is-320x640">
+              {data.ShowAboutImage ? (
+                <img
+                  className="is-rounded"
+                  src={profilePic}
+                  alt="about image"
+                />
+              ) : null}
+            </figure>
+          </Fade>
         </div>
         <div className="column">
           <h1>
