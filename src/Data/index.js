@@ -33,7 +33,7 @@ export default {
       title: "fit-pal",
       service: "UI/UX Design",
       imageSrc:
-        "https://github.com/fit-pal/my-workout-tracker/blob/master/assets/img1.png?raw=true",
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/fit-pal.png?raw=true",
       url: "https://my-workout-tracker-8763c.web.app/",
     },
     {
@@ -41,7 +41,7 @@ export default {
       title: "tracked",
       service: "Website Development",
       imageSrc:
-        "https://github.com/ajilk/tracked/blob/master/docs/assets/mockups/cover.png?raw=true&w=1350&q=80",
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/tracked.png?raw=true",
       url: "https://ajilk.com/tracked/",
     },
     {
@@ -49,7 +49,7 @@ export default {
       title: "Covid 404",
       service: "Web App",
       imageSrc:
-        "https://www.ifri.org/sites/default/files/styles/vignette_share/public/thumbnails/image/shutterstock_1663374028.jpg?itok=HTbE4jEB",
+        "https://raw.githubusercontent.com/Temurbekk/portfolio/master/src/Assets/Projects/Covid-404.png",
       url: "https://github.com/Temurbekk/Covid-404",
     },
     {
@@ -57,7 +57,7 @@ export default {
       title: "Student Dashboard",
       service: "Branding",
       imageSrc:
-        "https://github.com/Temurbekk/Student-Dashboard/blob/master/images/Search:Landing%20Page.png?raw=true",
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Student-Dashboard.png?raw=true",
       url: "https://github.com/Temurbekk/Student-Dashboard",
     },
     {
@@ -65,7 +65,7 @@ export default {
       title: "Registrar Database",
       service: "Branding",
       imageSrc:
-        "https://supertecnodroid.com/wp-content/uploads/2019/04/java-mysql-conexion-1024x576.jpg",
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/registrar-db.jpeg?raw=true",
       url: "https://github.com/Temurbekk/Registrar-Database",
     },
     {
@@ -73,7 +73,7 @@ export default {
       title: "portfolio",
       service: "Branding",
       imageSrc:
-        "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Portfolio.png?raw=true",
       url: "http://chetanverma.com/",
     },
   ],
