@@ -17,7 +17,7 @@ const About = () => {
             </figure>
           </Fade>
         </div>
-        <div className="column is-centered">
+        <div className="column ml-5">
           <h1>
             <Fade bottom cascade>
               Hello, My name is Temurbek.
