@@ -42,59 +42,61 @@ const Contact = () => {
       <Fade bottom cascade>
         <h1 className="title">CONTACT</h1>
       </Fade>
-      <form onSubmit={sendEmail}>
-        <div className="field">
-          <label className="label">Name</label>
-          <div className="control">
-            <input
-              className="input"
-              name="name"
-              type="text"
-              value={name}
-              placeholder="Name"
-              onChange={(e) => setName(e.target.value)}
-            />
+      <Fade bottom>
+        <form onSubmit={sendEmail}>
+          <div className="field">
+            <label className="label">Name</label>
+            <div className="control">
+              <input
+                className="input"
+                name="name"
+                type="text"
+                value={name}
+                placeholder="Name"
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="field">
-          <label className="label">Email</label>
-          <div className="control">
-            <input
-              className="input"
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={email}
-              ref={register({
-                required: "Required",
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                  message: "invalid email address",
-                },
-              })}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control">
+              <input
+                className="input"
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={email}
+                ref={register({
+                  required: "Required",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: "invalid email address",
+                  },
+                })}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="field">
-          <label className="label">Message</label>
-          <div className="control">
-            <textarea
-              name="message"
-              className="textarea"
-              placeholder="Textarea"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
+          <div className="field">
+            <label className="label">Message</label>
+            <div className="control">
+              <textarea
+                name="message"
+                className="textarea"
+                placeholder="Textarea"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="control">
-          <button className="button is-link">Submit</button>
-        </div>
-      </form>
+          <div className="control">
+            <button className="button is-link">Submit</button>
+          </div>
+        </form>
+      </Fade>
     </div>
   );
 };
