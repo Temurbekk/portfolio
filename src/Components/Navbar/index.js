@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
   return (
-    <nav
+    <div
       className="navbar has-shadow mobile"
       role="navigation"
       aria-label="main navigation"
@@ -37,7 +37,7 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
