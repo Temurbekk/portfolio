@@ -57,7 +57,7 @@ export default {
         "This is my personal portfolio website. I created it to showcase my passion for technology by sharing my most proud projects and experiences. Also, using this website, you can reach out to me on the contact page",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Portfolio.png?raw=true",
-      url: "http://chetanverma.com/",
+      url: "http://temur.dev/",
     },
     {
       id: 4,
