@@ -101,7 +101,7 @@ export default {
       job: "Software Engineer Intern",
       technologies: "React Native, Material UI",
       description:
-        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. As well as implemented data fetching from various APIs. Directly reported to the CTO",
+        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. User APIs to fetch medical stats and data",
       imageSrc:
         "https://images.squarespace-cdn.com/content/v1/5ae9b1b45417fcbd24516e44/1548834623748-WX3Q8ZT3W4CVYRGM1G4N/ke17ZwdGBToddI8pDm48kAO3tlx4zAn9kqiOyDBfKg0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcJjo5ZxlmN4Z7QydhlY1d2whRJ3xkybXHe2YAZiHo5XjVnbcm0RsvzpMjNAekx_K6/IMG_3691.jpeg",
       url: "https://www.stablebio.com/",
@@ -112,7 +112,7 @@ export default {
       job: "Software Engineer Intern",
       technologies: "React, TypeScript, Go, Buffalo, PostgreSQL, Auth0",
       description:
-        "Implemented the logout functionality using Auth0. Created components to see recently fulfilled orders. Implemented backend endpoints to retreive recently fulfilled orders. Performed a database migration to get par levels",
+        "Implemented many frontend and backend components. For the frontend: implemented a logout functionality, Created a component to show recently unfulfilled orders as well as recently fulfilled orders by the client. For the backend: implemented endpoints to accept fulfilled and unfulfilled orders.",
       imageSrc:
         "https://static1.squarespace.com/static/5bb124000b77bded2a903f2b/t/5d025b32b3126d0001c196c2/1594922257848/",
       url: "https://www.kekobox.com/",
