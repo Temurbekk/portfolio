@@ -3,12 +3,12 @@ export default {
     {
       id: 1,
       abouttext:
-        "I am a Junior Level Full Stack Software Engineer. I love creating something new with nothing but my imagination and my ability to code. Tech has been my passion ever since I was a young boy.",
+        "I am a Junior Level Full Stack Software Engineer. I love creating something new with nothing but my imagination and my ability to code. Tech has been my passion ever since I was a young boy",
     },
     {
       id: 2,
       abouttext:
-        "I am the type of person who would try to be good at everything. Therefore I have many hobbies. Some of my hobbies are: Teaching others how to code, Trading stocks, Working out, and Coding, of course.",
+        "I am the type of person who would try to be good at everything. Therefore I have many hobbies. Some of my hobbies are: Teaching others how to code, Trading stocks, Working out, and Coding, of course",
     },
     {
       id: 3,
