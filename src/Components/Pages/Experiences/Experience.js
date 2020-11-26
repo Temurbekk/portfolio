@@ -25,12 +25,16 @@ const Experience = ({
             <p className="title is-4">
               <a href={url}>{title}</a>
             </p>
-            <p className="subtitle is-6">Job Title: {job}</p>
-            <p className="subtitle is-6">Technologies: {technologies}</p>
+            <p className="subtitle is-6">
+              <b>Job Title:</b> {job}
+            </p>
+            <p className="subtitle is-6">
+              <b>Technologies:</b> {technologies}
+            </p>
           </div>
-          <div className="p-3"></div>
+          <br />
           <div className="content">
-            {description}
+            <b>Description:</b> {description}
             <br />
           </div>
         </div>
