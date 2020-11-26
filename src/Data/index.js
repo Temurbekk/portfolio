@@ -112,7 +112,7 @@ export default {
       job: "Software Engineer Intern",
       technologies: "React, TypeScript, Go, Buffalo, PostgreSQL, Auth0",
       description:
-        "Implemented many frontend and backend components. For the frontend: implemented a logout functionality, Created a component to show recently unfulfilled orders as well as recently fulfilled orders by the client. For the backend: implemented endpoints to accept fulfilled and unfulfilled orders.",
+        "Implemented many frontend and backend components. For the frontend: implemented a logout functionality, Created a component to show recently unfulfilled orders as well as recently fulfilled orders by the client. For the backend: implemented endpoints to accept fulfilled and unfulfilled orders",
       imageSrc:
         "https://static1.squarespace.com/static/5bb124000b77bded2a903f2b/t/5d025b32b3126d0001c196c2/1594922257848/",
       url: "https://www.kekobox.com/",
