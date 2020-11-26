@@ -148,9 +148,5 @@ export default {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/temursabirov/",
     },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/imtemurbek/",
-    },
   ],
 };
