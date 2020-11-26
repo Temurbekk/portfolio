@@ -32,7 +32,7 @@ export default {
       service: "Website",
       technologies: "React, Material UI, Firebase, Youtube API",
       description:
-        "My three teammates and I managed to put together a serverless web application that allows users to sign in and track their workouts. The frontend of the application is created using React Framework and designed using Material UI components. The backend solely depends on Firebase Real Time Database. The authentication made possible using Firebase Auth. Also, made use of the Youtube API to have a separate page for users to see how the workouts are done correctly. The search bar that looks for videos has a sctrict mode that will not allow users to search for anything else other than the workout videos.",
+        "My three teammates and I managed to put together a serverless web application that allows users to sign in and track their workouts. The frontend of the application is created using React Framework and designed using Material UI components. The backend solely depends on Firebase Real Time Database. The authentication made possible using Firebase Auth. Also, made use of the Youtube API to have a separate page for users to see how the workouts are done correctly. The search bar that looks for videos has a sctrict mode that will not allow users to search for anything else other than the workout videos. ",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/fit-pal.png?raw=true",
       url: "https://my-workout-tracker-8763c.web.app/",
@@ -43,7 +43,7 @@ export default {
       service: "Mobile App",
       technologies: "Flutter, Firebase",
       description:
-        "My two college classmates I and managed to create our very first Cross Platform Mobile Application using the Flutter SDK. The application's main idea is to track DEO assets. The technologies that local schools lend to their students and staff. This app is used to track those technologies. The app uses Firestore as a server to store all the data. It also uses Firebase auth to authenticate users and depending on what school the user works at, application will show only the data from that school",
+        "My two college classmates I and managed to create our very first Cross Platform Mobile Application using the Flutter SDK. The application's main goal is to track DOE assets. The technologies that local schools lend to their students and staff. This app is used to track those technologies. The app uses Firestore as a server to store all the data. It also uses Firebase auth to authenticate users and depending on what school the user works at, application will show only the data from that school. You do not have access to the technologies that are owned by a different school.",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/tracked.png?raw=true",
       url: "https://ajilk.com/tracked/",
@@ -54,7 +54,7 @@ export default {
       service: "Website",
       technologies: "React, Bulma",
       description:
-        "This is my personal portfolio website. I created it to showcase my passion for technology by sharing my most proud projects and experiences. Also, using this website, you can reach out to me on the contact page",
+        "This is my personal portfolio site. It is created to highlight some of the projects I am most proud of. Also it includes some of my most recent experiences that revolve around Software Engineering. The site also gives some introduction on who I am and what I do. I did not want to add too much information on this website. It is for an introduction only. If you wish to contact me to learn more, There is a contact page that will directly email me. It will guarantee that I receive your message and respond as soon as possible.",
       imageSrc:
         "https://github.com/Temurbekk/portfolio/blob/master/src/Assets/Projects/Portfolio.png?raw=true",
       url: "https://temur.dev/",
