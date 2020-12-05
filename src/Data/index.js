@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       abouttext:
-        "I am an Entry Level Full Stack Software Engineer. I love creating something new with nothing but my imagination and my ability to code. Tech has been my passion ever since I was a young boy",
+        "I am a Full Stack Software Engineer. I love creating something new with nothing but my imagination and my ability to code. Tech has been my passion ever since I was a young boy",
     },
     {
       id: 2,
