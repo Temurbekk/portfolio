@@ -101,7 +101,7 @@ export default {
       job: "Software Engineer Intern",
       technologies: "React Native, Material UI",
       description:
-        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. User APIs to fetch medical stats and data",
+        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. User APIs to fetch medical stats",
       imageSrc:
         "https://images.squarespace-cdn.com/content/v1/5ae9b1b45417fcbd24516e44/1548834623748-WX3Q8ZT3W4CVYRGM1G4N/ke17ZwdGBToddI8pDm48kAO3tlx4zAn9kqiOyDBfKg0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcJjo5ZxlmN4Z7QydhlY1d2whRJ3xkybXHe2YAZiHo5XjVnbcm0RsvzpMjNAekx_K6/IMG_3691.jpeg",
       url: "https://www.stablebio.com/",
