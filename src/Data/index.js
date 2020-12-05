@@ -22,7 +22,7 @@ export default {
     },
   ],
 
-  aboutImage: "../assets/profile_pic.png",
+  aboutImage: "../assets/profile_pic.jpg",
   ShowAboutImage: true,
 
   projects: [
