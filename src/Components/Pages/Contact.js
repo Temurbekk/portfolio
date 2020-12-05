@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
+import { Bounce, Zoom } from "react-reveal";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
@@ -39,10 +39,10 @@ const Contact = () => {
 
   return (
     <div>
-      <Fade bottom cascade>
+      <Zoom right cascade>
         <h1 className="title">CONTACT</h1>
-      </Fade>
-      <Fade bottom>
+      </Zoom>
+      <Bounce bottom>
         <form onSubmit={sendEmail}>
           <div className="field">
             <label className="label">Name</label>
@@ -96,7 +96,7 @@ const Contact = () => {
             <button className="button is-link">Submit</button>
           </div>
         </form>
-      </Fade>
+      </Bounce>
     </div>
   );
 };

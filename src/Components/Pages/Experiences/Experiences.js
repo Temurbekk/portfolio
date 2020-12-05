@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Zoom } from "react-reveal";
 
 import Experience from "./Experience";
 import data from "../../../Data";
@@ -8,13 +8,13 @@ const Experiences = () => {
   return (
     <div>
       <h1 className="heading">
-        <Fade bottom cascade>
+        <Zoom right cascade>
           <h1 className="title">Experiences</h1>
-        </Fade>
+        </Zoom>
       </h1>
       <div className="columns">
         {data.experiences.map((experience) => (
-          <div className="column">
+          <div key={experience.id} className="column">
             <Experience
               key={experience.id}
               title={experience.title}

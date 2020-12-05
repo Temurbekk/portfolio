@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
+import { Zoom } from "react-reveal";
 
 const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
@@ -12,7 +12,9 @@ const NavBar = () => {
     >
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <h1 className="title is-size-1">iTemur</h1>
+          <Zoom right cascade>
+            <h1 className="title is-size-1">iTemur</h1>
+          </Zoom>
         </Link>
 
         <div

@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Project = ({
   url,
@@ -10,7 +10,7 @@ const Project = ({
   technologies,
 }) => {
   return (
-    <Fade bottom>
+    <Zoom top>
       <div className="box">
         <div className="column">
           <figure className="image is-5by2">
@@ -36,7 +36,7 @@ const Project = ({
           </p>
         </div>
       </div>
-    </Fade>
+    </Zoom>
   );
 };
 

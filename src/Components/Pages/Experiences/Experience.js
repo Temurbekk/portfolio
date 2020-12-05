@@ -1,6 +1,5 @@
 import React from "react";
-
-import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Experience = ({
   url,
@@ -11,7 +10,7 @@ const Experience = ({
   job,
 }) => {
   return (
-    <Fade bottom>
+    <Zoom bottom>
       <div className="card">
         <div className="card-content">
           <div className="media">
@@ -39,7 +38,7 @@ const Experience = ({
           </div>
         </div>
       </div>
-    </Fade>
+    </Zoom>
   );
 };
 
