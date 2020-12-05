@@ -14,8 +14,8 @@ const Experience = ({
       <div className="card">
         <div className="card-content">
           <div className="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
+            <div className="media-left">
+              <figure className="image is-128x128">
                 <img src={imageSrc} alt={title} />
               </figure>
             </div>
