@@ -7,11 +7,11 @@ import data from "../../../Data";
 const Experiences = () => {
   return (
     <div>
-      <h1 className="heading">
+      <div className="heading">
         <Zoom right cascade>
           <h1 className="title">Experiences</h1>
         </Zoom>
-      </h1>
+      </div>
       <div className="columns">
         {data.experiences.map((experience) => (
           <div key={experience.id} className="column">
