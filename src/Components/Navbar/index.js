@@ -4,6 +4,7 @@ import { Zoom } from "react-reveal";
 
 const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
+  const handleClick = () => setMenuIsDisplayed(!menuIsDisplayed);
   return (
     <div
       className="navbar has-shadow mobile"
@@ -19,7 +20,7 @@ const NavBar = () => {
 
         <div
           className={`navbar-burger ${menuIsDisplayed ? "is-active" : ""}`}
-          onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}
+          onClick={handleClick}
         >
           <span />
           <span />
@@ -27,7 +28,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className={`navbar-menu ${menuIsDisplayed ? "is-active" : ""}`}>
-        <div className="navbar-end">
+        <div className="navbar-end" onClick={handleClick}>
           <Link to="/projects" className="navbar-item">
             Projects
           </Link>

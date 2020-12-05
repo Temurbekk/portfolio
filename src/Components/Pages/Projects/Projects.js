@@ -14,7 +14,12 @@ const Projects = () => {
       </div>
       <div className="columns is-multiline is-mobile is-centered">
         {data.projects.map((project) => (
-          <div key={project.id} className="column is-half">
+          <div
+            key={project.id}
+            className={`column ${
+              window.innerWidth <= 800 ? "is-full" : "is-half"
+            }`}
+          >
             <Project
               key={project.id}
               title={project.title}
