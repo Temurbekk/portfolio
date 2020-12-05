@@ -7,11 +7,11 @@ import data from "../../../Data";
 const Projects = () => {
   return (
     <div>
-      <div className="heading">
-        <Zoom right cascade>
+      <Zoom right cascade>
+        <div className="heading">
           <h1 className="title">Projects</h1>
-        </Zoom>
-      </div>
+        </div>
+      </Zoom>
       <div className="columns is-multiline is-mobile is-centered">
         {data.projects.map((project) => (
           <div

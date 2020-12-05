@@ -5,6 +5,7 @@ import { Zoom } from "react-reveal";
 const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
   const handleClick = () => setMenuIsDisplayed(!menuIsDisplayed);
+
   return (
     <div
       className="navbar has-shadow mobile"
@@ -12,11 +13,11 @@ const NavBar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <Zoom right cascade>
+        <Zoom right cascade>
+          <Link to="/" className="navbar-item">
             <h1 className="title is-size-1">iTemur</h1>
-          </Zoom>
-        </Link>
+          </Link>
+        </Zoom>
 
         <div
           className={`navbar-burger ${menuIsDisplayed ? "is-active" : ""}`}

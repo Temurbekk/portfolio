@@ -8,31 +8,23 @@ import profilePic from "../../Assets/profile_pic.jpg";
 const About = () => {
   return (
     <div className="columns">
-      <div className="column">
-        <Zoom>
+      <Zoom>
+        <div className="column">
           <figure className="image is-square">
-            {data.ShowAboutImage ? (
-              <img className="is-rounded" src={profilePic} alt="Profile" />
-            ) : null}
+            <img className="is-rounded" src={profilePic} alt="Profile" />
           </figure>
-        </Zoom>
-      </div>
-      <div className="column ml-5 mr-5">
-        <h1>
-          <Bouce right>
-            <h1 className="title is-2">Hello, My name is Temurbek.</h1>
-            <br />
-          </Bouce>
-        </h1>
-        <Bouce right>
+        </div>
+      </Zoom>
+      <Bouce right>
+        <div className="column ml-5 mr-5">
+          <h1 className="title is-2">Hello, My name is Temurbek.</h1>
           {data.about.map((link, idx) => (
             <div key={idx}>
-              <p className="is-size-4">{link.abouttext}</p>
-              <br />
+              <p className="is-size-4 mb-5">{link.abouttext}</p>
             </div>
           ))}
-        </Bouce>
-      </div>
+        </div>
+      </Bouce>
     </div>
   );
 };

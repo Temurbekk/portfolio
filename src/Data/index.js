@@ -21,10 +21,6 @@ export default {
         "I am proficient with frameworks like React, React Native, and Flutter",
     },
   ],
-
-  aboutImage: "../assets/profile_pic.jpg",
-  ShowAboutImage: true,
-
   projects: [
     {
       id: 1,
