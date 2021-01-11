@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       abouttext:
-        "I am a Full Stack Software Engineer. I love creating something new with nothing but my imagination and my ability to code. Tech has been my passion ever since I was a young boy",
+        "I am a Full Stack Software Engineer. I have a passion for creating something new by using nothing more than my imagination and ability tp code",
     },
     {
       id: 2,
@@ -13,12 +13,15 @@ export default {
     {
       id: 3,
       abouttext:
-        "I am proficient with languages like Java, JavaScript, Python, Dart, HTML/CSS, and SQL",
+        "Languages: Java, JavaScript, TypeScript, Python, Dart, HTML/CSS",
     },
     {
       id: 4,
-      abouttext:
-        "I am proficient with frameworks like React, React Native, and Flutter",
+      abouttext: "Database: Sequilize, MySQL, PostgreSQL, GraphQL",
+    },
+    {
+      id: 5,
+      abouttext: "Frameworks: React, React Native, Angular, and Flutter",
     },
   ],
   projects: [
