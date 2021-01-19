@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # This is my portfolio website
 
+Here is the link for you to check it out: [portfolio](https://temur.dev/)
+
 ## What can you find here?
 
 A little introduction about me
