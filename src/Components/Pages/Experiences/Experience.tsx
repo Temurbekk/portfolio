@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Zoom from "react-reveal/Zoom";
-import ExperienceType from "../../../Models/Experience";
+import ExperienceType from "../../../Models/experience";
 
 const Experience: FC<ExperienceType> = ({
   url,

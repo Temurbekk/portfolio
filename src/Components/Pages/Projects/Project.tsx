@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Zoom from "react-reveal/Zoom";
-import ProjectType from "../../../Models/Project";
+import ProjectType from "../../../Models/project";
 
 const Project: FC<ProjectType> = ({
   url,
