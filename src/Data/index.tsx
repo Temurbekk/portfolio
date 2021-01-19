@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       abouttext:
-        "I am a Full Stack Software Engineer. I have a passion for creating something new by using nothing more than my imagination and ability tp code",
+        "I am a Full Stack Software Engineer. I have a passion for creating something new by using nothing more than my imagination and ability to code",
     },
     {
       id: 2,
