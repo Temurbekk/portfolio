@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import { Zoom } from "react-reveal";
 
 import Experience from "./Experience";
 import data from "../../../Data";
 
-const Experiences = () => {
+const Experiences: FC = () => {
   return (
     <div>
       <Zoom right cascade>

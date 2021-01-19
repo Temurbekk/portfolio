@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import { Bounce, Zoom } from "react-reveal";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
-const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const Contact: FC = () => {
+  const [name, setName] = useState<string | undefined>("");
+  const [email, setEmail] = useState<string | undefined>("");
+  const [message, setMessage] = useState<string | undefined>("");
 
   const { register } = useForm();
 

@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import { Link } from "react-router-dom";
 import { Zoom } from "react-reveal";
 
-const NavBar = () => {
-  const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
+const NavBar: FC = () => {
+  const [menuIsDisplayed, setMenuIsDisplayed] = useState<boolean | undefined>(
+    false
+  );
   const handleClick = () => setMenuIsDisplayed(!menuIsDisplayed);
 
   return (

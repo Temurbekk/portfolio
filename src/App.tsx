@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Routes from "./Components/Routes";
 import NavBar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="container">
       <Router>
@@ -16,6 +16,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;

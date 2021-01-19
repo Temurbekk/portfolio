@@ -1,14 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import Zoom from "react-reveal/Zoom";
+import ExperienceType from "../../../Models/Experience";
 
-const Experience = ({
+const Experience: FC<ExperienceType> = ({
   url,
   imageSrc,
   title,
   technologies,
   description,
   job,
-}) => {
+}: ExperienceType) => {
   return (
     <Zoom bottom>
       <div className="card">

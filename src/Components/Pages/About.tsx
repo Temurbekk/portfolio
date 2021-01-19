@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import Bouce from "react-reveal/Bounce";
 import Zoom from "react-reveal/Zoom";
 
-import data from "../../Data";
+import data from "../../Data/";
 import profilePic from "../../Assets/profile_pic.jpg";
 
-const About = () => {
+const About: FC = () => {
   return (
     <div className="columns">
       <Zoom>

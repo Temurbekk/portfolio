@@ -1,14 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import Zoom from "react-reveal/Zoom";
+import ProjectType from "../../../Models/Project";
 
-const Project = ({
+const Project: FC<ProjectType> = ({
   url,
   imageSrc,
   title,
   service,
   description,
   technologies,
-}) => {
+}: ProjectType) => {
   return (
     <Zoom top>
       <div className="box">

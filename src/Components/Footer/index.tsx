@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
 import data from "../../Data";
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <div>
       <div className="phantom" />

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import { Zoom } from "react-reveal";
 
 import Project from "./Project";
 import data from "../../../Data";
 
-const Projects = () => {
+const Projects: FC = () => {
   return (
     <div>
       <Zoom right cascade>
