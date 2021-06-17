@@ -3,17 +3,17 @@ export default {
     {
       id: 1,
       abouttext:
-        "I am a Full Stack Software Engineer. I have a passion for creating something new by using nothing more than my imagination and ability to code",
+        "I am an Associate Software Engineer at Fidelity Investments. I have a huge passion for technology. I learn and grow everyday.",
     },
     {
       id: 2,
       abouttext:
-        "I am the type of person who would try to be good at everything. Therefore I have many hobbies. Some of my hobbies are: Teaching others how to code, Trading stocks, Working out, and Coding, of course",
+        "I like trying new things. I make sure I do something different everyday. It can be something small and insignificant or something big and impactful. Therefore, I have many hobbies. Some of my hobbies are: Teaching others, Trading stocks, Working out, and Coding, of course.",
     },
     {
       id: 3,
       abouttext:
-        "Languages: Java, JavaScript, TypeScript, Python, Dart, HTML/CSS",
+        "Languages: Java, JavaScript, TypeScript, HTML/CSS, Go, Swift, Python",
     },
     {
       id: 4,
@@ -21,7 +21,8 @@ export default {
     },
     {
       id: 5,
-      abouttext: "Frameworks: React, React Native, Angular, and Flutter",
+      abouttext:
+        "Frameworks: React, React Native, Angular, Express, and Flutter",
     },
   ],
   projects: [
@@ -95,26 +96,35 @@ export default {
 
   experiences: [
     {
-      id: 1,
-      title: "StableBio",
-      job: "Software Engineer Intern",
-      technologies: "React Native, Material UI",
+      id: 6,
+      title: "Fidelity Investments",
+      job: "Associate Software Engineer",
+      technologies: "Java, MySQL, Typescript, Angular, Swift",
       description:
-        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. User APIs to fetch medical stats",
+        "Worked on internal tool to display Angular components in isolation. Currently on a native iOS team working with Swift, Xcode. Testing backend services with Postman. Mainly pushing out features for Fidelity Investments app and Spire app",
       imageSrc:
-        "https://images.squarespace-cdn.com/content/v1/5ae9b1b45417fcbd24516e44/1548834623748-WX3Q8ZT3W4CVYRGM1G4N/ke17ZwdGBToddI8pDm48kAO3tlx4zAn9kqiOyDBfKg0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcJjo5ZxlmN4Z7QydhlY1d2whRJ3xkybXHe2YAZiHo5XjVnbcm0RsvzpMjNAekx_K6/IMG_3691.jpeg",
-      url: "https://www.stablebio.com/",
+        "https://pbs.twimg.com/profile_images/1278360830367674368/SfqcgSVD_400x400.jpg",
     },
     {
-      id: 2,
-      title: "Keko Box",
-      job: "Software Engineer Intern",
-      technologies: "React, TypeScript, Go, Buffalo, PostgreSQL, Auth0",
+      id: 5,
+      title: "Tech Talent Pipeline",
+      job: "Associate Software Engineer",
+      technologies:
+        "Javascript, React, Redux, Nodejs, Expressjs, Sequalize, PostgreSQL, APIs",
       description:
-        "Implemented many frontend and backend components. For the frontend: implemented a logout functionality, Created a component to show recently unfulfilled orders as well as recently fulfilled orders by the client. For the backend: implemented endpoints to accept fulfilled and unfulfilled orders",
+        "Worked as a Teaching Assistant in a classroom with 30+ students. Was on call to answer any student confusion and unblock them asap. Graded assignments and provided students with academic and professional feedback",
       imageSrc:
-        "https://static1.squarespace.com/static/5bb124000b77bded2a903f2b/t/5d025b32b3126d0001c196c2/1594922257848/",
-      url: "https://www.kekobox.com/",
+        "https://images.squarespace-cdn.com/content/v1/54d3a0dee4b026182d00678f/1477579015890-A21YLPBJ52JTDMJEYYKT/ke17ZwdGBToddI8pDm48kMrxTVJ4vssYFCaBUhrMT2FZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxODIjmcyD-jB-T7UjYJQJhf-Q_u2gKr-wXFg9D30Krwf2CLL-Ve3p5dxzA2c9S6Q4/image-asset.png",
+    },
+    {
+      id: 4,
+      title: "Acme Pro Academy",
+      job: "Course Instructor",
+      technologies: "Java, MySQL, Unix, Selenium",
+      description:
+        "Teaching 5 students in a small course to become QA engineers. Taught them the fundamentals and as well as Object Oriented aspects of Java. Taught them fundamentals and advanced techniques in MySQL. Taught them a whole month of Selenium for automation testing",
+      imageSrc:
+        "https://i.pinimg.com/originals/ee/ae/12/eeae128c67a6f0a902a27bc8e9af7bea.png",
     },
     {
       id: 3,
@@ -128,14 +138,26 @@ export default {
       url: "https://errundsonline.com/",
     },
     {
-      id: 4,
-      title: "ACME PRO ACADEMY",
-      job: "Course Instructor",
-      technologies: "Java, MySQL, Unix, Selenium",
+      id: 2,
+      title: "Keko Box",
+      job: "Software Engineer Intern",
+      technologies: "React, TypeScript, Go, Buffalo, PostgreSQL, Auth0",
       description:
-        "Teaching 5 students in a small course to become QA engineers. Taught them the fundamentals and as well as Object Oriented aspects of Java. Taught them fundamentals and advanced techniques in MySQL. Taught them a whole month of Selenium for automation testing",
+        "Worked alongside CTO to build and manage company web application. Added feature to allow customers fulfil their recent orders and view the history of recently fulfilled orders. Also, implemented par level endpoints on the backend",
       imageSrc:
-        "https://i.pinimg.com/originals/ee/ae/12/eeae128c67a6f0a902a27bc8e9af7bea.png",
+        "https://static1.squarespace.com/static/5bb124000b77bded2a903f2b/t/5d025b32b3126d0001c196c2/1594922257848/",
+      url: "https://www.kekobox.com/",
+    },
+    {
+      id: 1,
+      title: "StableBio",
+      job: "Software Engineer Intern",
+      technologies: "React Native, Material UI",
+      description:
+        "Worked alongside with the CEO and the CTO of the company to create a cross-platform mobile application using React Native. Created the user interface according to the CEO's design. Implemented navigation and responsiveness or the application. User APIs to fetch medical stats",
+      imageSrc:
+        "https://images.squarespace-cdn.com/content/v1/5ae9b1b45417fcbd24516e44/1548834623748-WX3Q8ZT3W4CVYRGM1G4N/ke17ZwdGBToddI8pDm48kAO3tlx4zAn9kqiOyDBfKg0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcJjo5ZxlmN4Z7QydhlY1d2whRJ3xkybXHe2YAZiHo5XjVnbcm0RsvzpMjNAekx_K6/IMG_3691.jpeg",
+      url: "https://www.stablebio.com/",
     },
   ],
   social: [
