@@ -39,7 +39,7 @@ const Contact: FC = () => {
 
   return (
     <div>
-      <Zoom right cascade>
+      <Zoom>
         <h1 className="title">CONTACT</h1>
       </Zoom>
       <Bounce bottom>

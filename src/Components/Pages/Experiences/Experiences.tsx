@@ -12,9 +12,14 @@ const Experiences: FC = () => {
           <h1 className="title">Experiences</h1>
         </div>
       </Zoom>
-      <div className="columns">
+      <div className="columns is-multiline is-mobile is-centered">
         {data.experiences.map((experience) => (
-          <div key={experience.id} className="column">
+          <div
+            key={experience.id}
+            className={`column ${
+              window.innerWidth <= 800 ? "is-full" : "is-half"
+            }`}
+          >
             <Experience
               key={experience.id}
               title={experience.title}
