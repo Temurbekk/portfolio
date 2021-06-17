@@ -108,7 +108,7 @@ export default {
     {
       id: 5,
       title: "Tech Talent Pipeline",
-      job: "Associate Software Engineer",
+      job: "Teaching Fellow",
       technologies:
         "Javascript, React, Redux, Nodejs, Expressjs, Sequalize, PostgreSQL, APIs",
       description:
