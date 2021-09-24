@@ -17,7 +17,7 @@ export default {
     },
     {
       id: 4,
-      abouttext: "Database: Sequilize, MySQL, PostgreSQL, GraphQL",
+      abouttext: "Database: Sequelize, MySQL, PostgreSQL, GraphQL",
     },
     {
       id: 5,
@@ -29,7 +29,7 @@ export default {
     {
       id: 1,
       title: "fit-pal",
-      service: "Website",
+      service: "Web App",
       technologies: "React, Material UI, Firebase, Youtube API",
       description:
         "My three teammates and I managed to put together a serverless web application that allows users to sign in and track their workouts. The frontend of the application is created using React Framework and designed using Material UI components. The backend solely depends on Firebase Real Time Database. The authentication made possible using Firebase Auth. Also, made use of the Youtube API to have a separate page for users to see how the workouts are done correctly. The search bar that looks for videos has a sctrict mode that will not allow users to search for anything else other than the workout videos",
@@ -62,7 +62,7 @@ export default {
     {
       id: 4,
       title: "Covid 404",
-      service: "Website",
+      service: "Web App",
       technologies: "React, Grommet, APIs",
       description:
         "This serverless web application was created for the Brooklyn College Hackathon. The application uses various Covid-19 APIs to fetch which countries are most affected by the virus, What news are going around regarding Covid-19, and list of restaurants that do food delivery near the user. This is created with an idea that the website will have everything people need to stay at home. The website uses React for the frontend and uses Grommet styled components to style the whole website",
@@ -101,7 +101,7 @@ export default {
       job: "Associate Software Engineer",
       technologies: "Java, MySQL, Typescript, Angular, Swift",
       description:
-        "Worked on internal tool to display Angular components in isolation. Currently on a native iOS team working with Swift, Xcode. Testing backend services with Postman. Mainly pushing out features for Fidelity Investments app and Spire app",
+        "Worked on internal tool to display Angular components in isolation. Currently on an iOS team working with Swift. Testing backend services with Postman. Pushing out features and handling bugfixes for Fidelity Investments app and Spire app",
       imageSrc:
         "https://pbs.twimg.com/profile_images/1278360830367674368/SfqcgSVD_400x400.jpg",
     },
