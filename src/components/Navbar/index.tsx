@@ -4,11 +4,11 @@ import Links from "./Links";
 import navLinks from "../../data/NavLinks";
 
 interface HamburgerProps {
-  open?: boolean;
+  open: boolean;
 }
 
 interface ToggleProps {
-  navbarOpen?: boolean;
+  navbarOpen: boolean;
 }
 
 const Navigation = styled.nav`
@@ -89,7 +89,7 @@ const Navbar = () => {
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+        {navbarOpen ? <Hamburger open={true} /> : <Hamburger open={false} />}
       </Toggle>
       <Navbox open={!navbarOpen}>
         {navLinks.map((navItem) => (
