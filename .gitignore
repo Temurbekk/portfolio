@@ -12,6 +12,8 @@
 /build
 .github
 .firebase
+.cached
+.firebaserc
 
 # misc
 .DS_Store
