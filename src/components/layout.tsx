@@ -9,7 +9,7 @@ import SEO from "./seo";
 import { Location } from "@reach/router";
 
 const Wrapper = styled.div`
-  background-color: #060144;
+  background-color: #121212;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;

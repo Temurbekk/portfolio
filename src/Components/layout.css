@@ -617,7 +617,7 @@ p {
   font-family: "Signika", sans-serif;
 }
 .Wrapper {
-  background-image: url("../images/bg.jpg");
+  background-color: #121212;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;

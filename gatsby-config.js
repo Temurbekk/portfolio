@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.temur.dev",
     title: "Temur",
     description: "Temur' personal website portfolio",
     author: "Temurbek Sabirov",
+    image:
+      "https://temur.dev/static/99a3213d9a19eb9d4b30a62e181cd80c/c1587/portrait.webp",
   },
   plugins: [
     "gatsby-plugin-dts-css-modules",
@@ -21,6 +23,25 @@ module.exports = {
         rule: {
           include: /static/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-interactive-gifs`,
+            options: {
+              root: `${__dirname}`,
+              src: `${__dirname}/content/gif`,
+              dest: `${__dirname}/public/static/gifs`,
+              play: `${__dirname}/src/img/play.gif`,
+              placeholder: `${__dirname}/src/img/play.gif`,
+              loading: `${__dirname}/src/img/play.gif`,
+              relativePath: `/static/gifs`,
+            },
+          },
+        ],
       },
     },
     "gatsby-plugin-styled-components",
