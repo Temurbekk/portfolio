@@ -24,9 +24,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const Layout = ({ children, pageTitle }) => (
+const Layout = ({ children, pageTitle, description }) => (
   <>
-    <SEO title={pageTitle} />
+    <SEO title={pageTitle} description={description} />
     <Location>
       {({ location }) => {
         return (

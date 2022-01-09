@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 
 const ProjectsPage = () => {
   return (
-    <Layout pageTitle="About Me">
+    <Layout pageTitle="Projects" description="Learn about Temur's projects">
       <ProjectsWrapper>
         <Tabs>
           <TabPanel>

@@ -12,7 +12,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Home Page" description="About Temur">
       <UserWrapper>
         <UserTitle>
           <span>Temur</span> Sabirov

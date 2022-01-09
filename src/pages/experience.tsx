@@ -19,7 +19,10 @@ import Layout from "../components/layout";
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About Me">
+    <Layout
+      pageTitle="Experience Page"
+      description="Learn about Temur's experiences"
+    >
       <ExperienceWrapper>
         <WorkWrapper>
           <h1>Work Experience</h1>

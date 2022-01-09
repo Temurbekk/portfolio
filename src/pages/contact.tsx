@@ -12,7 +12,7 @@ import {
 const ContactPage = () => {
   return (
     <div>
-      <Layout pageTitle="Contact Page">
+      <Layout pageTitle="Contact Page" description="Contact Temur">
         <ContactWrapper>
           <ContactHeader>Get in touch</ContactHeader>
           <ContactDetails>
