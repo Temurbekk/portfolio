@@ -21,7 +21,7 @@ const Box = styled.div`
     min-height: auto;
     max-width: fit-content;
   }
-  @media (min-width: 768px) and (max-width: 1030px) {
+  @media (min-width: 700px) and (max-width: 1030px) {
     width: 100%;
     min-height: auto;
     box-sizing: border-box;
