@@ -21,7 +21,8 @@ const AboutPage = () => {
           <div>
             <p>
               Hello there, welcome to my portfolio. I am a Software Engineer
-              based in NYC, specializing in Frontend and iOS development.
+              based in NYC, specializing in mostly Frontend development and some
+              Backend.
             </p>
             <p>
               I have a huge passion for technology. I learn and grow everyday.

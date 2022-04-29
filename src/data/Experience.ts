@@ -1,23 +1,31 @@
 export default [
   {
+    id: 7,
+    name: "JPMorgan Chase & Co.",
+    designation: "Senior Software Engineer",
+    dated: "February 2022 - Present",
+    logo: "https://media.designrush.com/inspiration_images/134937/conversions/_1511454480_993_jpmorgan-mobile.jpg",
+    companyLink: "https://www.fidelity.com/",
+    description: `<p>Working as a Frontend Software Engineer help migrate legacy code into new React components. Working on Automated Investing and Suitability services</p>`,
+  },
+  {
     id: 6,
     name: "Fidelity Investments",
     designation: "Associate Software Engineer",
-    dated: "January 2021 - Present",
+    dated: "January 2021 - February 2022",
     logo: "https://pbs.twimg.com/profile_images/1278360830367674368/SfqcgSVD_400x400.jpg",
     companyLink: "https://www.fidelity.com/",
     description: `<p>Worked on internal tool to display Angular components in isolation.</p>
-      <p>Currently on an iOS team working with Swift. Testing backend services with Postman. Pushing out features and handling bugfixes for Fidelity Investments app and Spire app.</p>`,
+      <p>Worked on an iOS team using Swift. Testing backend services with Postman. Pushing out features and handling bugfixes for Fidelity Investments flagship app and Spire app.</p>`,
   },
   {
     id: 5,
-    name: "Acme Pro Academy",
+    name: "Sprint Academy",
     designation: "Course Instructor",
     dated: "August 2020 - Present",
     logo: "https://i.pinimg.com/originals/ee/ae/12/eeae128c67a6f0a902a27bc8e9af7bea.png",
-    companyLink: "#",
-    description: `<p>Teaching 5 students in a small course to become QA engineers. Taught them the fundamentals and as well as Object Oriented aspects of Java. 
-      Taught them fundamentals and advanced techniques in MySQL. Taught them a whole month of Selenium for automation testing.</p>`,
+    companyLink: "https://sprintacademy.co/",
+    description: `<p>Teaching 15+ students in a small course to become QA engineers. Taught them the fundamentals and as well as advanced concepts of Python, Selenium, and Test Automation.</p>`,
   },
   {
     id: 4,
