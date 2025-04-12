@@ -1,16 +1,172 @@
 ---
+// src/pages/index.astro (or your relevant page file)
+import "../styles/global.css"; // Ensure this imports Tailwind CSS directives
 
+// Define metadata for reuse
+const siteTitle = "Temurbek Sabirov - Software Engineer";
+const siteDescription =
+  "Portfolio of Temurbek Sabirov, a fullstack software engineer based in New York.";
+const linkedInUrl = "https://www.linkedin.com/in/temursabirov/"; // Use const for URLs
+const githubUrl = "https://github.com/Temurbekk";
+
+// Raccoon Animation Definition (Can also be put in global.css)
+const raccoonAnimationStyle = `
+  @keyframes slow-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-slow-spin {
+    animation: slow-spin 15s linear infinite; /* Adjust time (e.g., 10s, 15s, 20s) for desired speed */
+  }
+`;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="en" class="scroll-smooth">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <meta name="generator" content={Astro.generator} />
+  <title>{siteTitle}</title>
+  <meta name="description" content={siteDescription} />
+  <meta property="og:title" content={siteTitle} />
+  <meta property="og:description" content={siteDescription} />
+  <meta property="og:url" content={Astro.url} />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <body
+    class="bg-slate-900 text-slate-200 font-sans min-h-screen relative overflow-x-hidden"
+  >
+    <div
+      class="absolute top-0 right-0 w-[40rem] h-[40rem] -z-10 pointer-events-none"
+      aria-hidden="true"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-radial from-sky-700/50 via-slate-900/15 to-transparent blur-2xl opacity-75"
+      >
+      </div>
+    </div>
+
+    <div
+      class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10"
+    >
+      <header class="mb-12 md:mb-16 text-center md:text-left">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-100 tracking-tight"
+        >
+          Temurbek Sabirov
+          <svg
+            height="50px"
+            width="50px"
+            fill="#ffffff"
+            class="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 ml-2 sm:ml-3 inline-block align-middle fill-current text-slate-400 animate-slow-spin"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g stroke-width="0"></g>
+            <g stroke-linecap="round" stroke-linejoin="round"> </g>
+            <g>
+              <path
+                d="M14 2.75c-0.69 0-1.25 0.56-1.25 1.25v0 6.982l-9.866-9.866c-0.226-0.225-0.537-0.363-0.881-0.363-0.69 0-1.25 0.56-1.25 1.25 0 0.344 0.139 0.655 0.363 0.881l9.866 9.866h-6.982c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h10c0.689-0.003 1.247-0.561 1.25-1.25v-10c0-0.69-0.56-1.25-1.25-1.25v0zM17.522 15.153c0.141 0.061 0.305 0.096 0.478 0.097h10c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0h-6.981l9.866-9.866c0.226-0.226 0.366-0.539 0.366-0.884 0-0.691-0.56-1.251-1.251-1.251-0.346 0-0.658 0.14-0.885 0.367v0l-9.865 9.866v-6.982c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 10c0.002 0.517 0.316 0.96 0.764 1.15l0.008 0.003zM21.019 19.25h6.981c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0l-10.013 0.003c-0.68 0.005-1.229 0.555-1.235 1.234v0.001l-0.003 0.013v10c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-6.981l9.865 9.866c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.345-0.14-0.658-0.366-0.884l0 0zM15.154 17.523c-0.193-0.456-0.636-0.771-1.153-0.773h-10c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.982l-9.866 9.865c-0.227 0.226-0.367 0.539-0.367 0.885 0 0.691 0.56 1.251 1.251 1.251 0.345 0 0.658-0.14 0.884-0.366v0l9.866-9.866v6.981c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-10l-0.003-0.013c-0.001-0.168-0.036-0.327-0.097-0.473l0.003 0.008z"
+              ></path>
+            </g>
+          </svg>
+        </h1>
+        <h2
+          class="mt-2 text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-400"
+        >
+          Software Engineer
+        </h2>
+      </header>
+
+      <main class="space-y-10 md:space-y-14">
+        <section aria-labelledby="about-heading">
+          <header>
+            <h3
+              id="about-heading"
+              class="text-2xl font-semibold text-slate-300 mb-4 border-b border-slate-700 pb-2"
+            >
+              About
+            </h3>
+          </header>
+          <p class="text-base sm:text-lg text-slate-400 leading-relaxed">
+            A fullstack software engineer based in the New York Metro area.
+            Currently working at JPMorgan Chase & Co. on innovative trading
+            platforms, focusing on building robust and scalable solutions.
+            Passionate about clean code, user experience, and leveraging modern
+            technologies.
+          </p>
+        </section>
+
+        <section aria-labelledby="links-heading">
+          <header>
+            <h3
+              id="links-heading"
+              class="text-2xl font-semibold text-slate-300 mb-4 border-b border-slate-700 pb-2"
+            >
+              Connect
+            </h3>
+          </header>
+          <ul class="list-none p-0 space-y-3">
+            <li>
+              <a
+                href={linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-sky-400 hover:text-sky-300 hover:underline transition-colors duration-200 group text-base sm:text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5 mr-2 fill-current flex-shrink-0"
+                  aria-hidden="true"
+                  role="img"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                  ></path>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-sky-400 hover:text-sky-300 hover:underline transition-colors duration-200 group text-base sm:text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5 mr-2 fill-current flex-shrink-0"
+                  aria-hidden="true"
+                  role="img"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  ></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="mt-16 md:mt-20 pt-8 border-t border-slate-700 text-center">
+        <p class="text-sm text-slate-500">
+          Designed & Developed by Temurbek &copy; {new Date().getFullYear()}
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

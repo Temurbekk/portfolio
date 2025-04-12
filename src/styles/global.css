@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+
+@keyframes slow-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-slow-spin:hover {
+    animation: slow-spin 5s linear infinite; /* Adjust time (e.g., 10s, 15s, 20s) for desired speed */
+  }
