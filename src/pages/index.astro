@@ -1,172 +1,476 @@
 ---
-// src/pages/index.astro (or your relevant page file)
-import "../styles/global.css"; // Ensure this imports Tailwind CSS directives
+import "../styles/global.css";
 
-// Define metadata for reuse
-const siteTitle = "Temurbek Sabirov - Software Engineer";
+const siteTitle = "Temurbek Sabirov - Lead Software Engineer";
 const siteDescription =
-  "Portfolio of Temurbek Sabirov, a fullstack software engineer based in New York.";
-const linkedInUrl = "https://www.linkedin.com/in/temursabirov/"; // Use const for URLs
-const githubUrl = "https://github.com/Temurbekk";
+  "Portfolio of Temurbek Sabirov, a Lead Software Engineer based in the New York Metro area. Specializing in fullstack development, React, and scalable architecture.";
+const siteUrl = "https://temur.dev"; // Based on resume
 
-// Raccoon Animation Definition (Can also be put in global.css)
-const raccoonAnimationStyle = `
-  @keyframes slow-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  .animate-slow-spin {
-    animation: slow-spin 15s linear infinite; /* Adjust time (e.g., 10s, 15s, 20s) for desired speed */
-  }
-`;
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/temursabirov",
+    icon: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/Temurbekk",
+    icon: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12",
+  },
+];
+
+const skills = {
+  languages: ["JavaScript", "TypeScript", "Java", "Swift", "Python", "Go"],
+  frameworks: [
+    "React",
+    "React Native",
+    "NextJS",
+    "PostgreSQL",
+    "Firebase",
+    "GraphQL",
+    "Node.js",
+    "Angular",
+  ],
+  tools: ["SSR", "Selenium", "Splunk", "CMS", "Git", "Vite"],
+};
+
+const experience = [
+  {
+    company: "JPMorganChase",
+    role: "Lead Software Engineer",
+    period: "Jan 2025 - Present",
+    description:
+      "Leading fullstack team responsible for the core functionality of the new stocks, ETFs, and mutual fund applications.",
+    achievements: [
+      "Oversee resiliency and timely releases while leading multiple teams of consultants.",
+      "Led the design and shipping of a complex Options trading feature using React, TypeScript, and GraphQL.",
+      "Redesigned Mutual Fund features, enhancing user experience through effective collaboration.",
+      "Mentored a newly formed offshore team, increasing output by 80% and facilitating autonomy.",
+    ],
+  },
+  {
+    company: "JPMorganChase",
+    role: "Senior Software Engineer",
+    period: "Feb 2022 - Jan 2025",
+    description:
+      "Architected and led the migration of legacy systems to a modern React-based microfrontend architecture.",
+    achievements: [
+      "Improved performance (62% faster page loads) and scalability via microfrontend architecture.",
+      "Built internal tools to improve developer productivity, saving 16 hours per sprint.",
+      "Spearheaded frontend development for a redesigned trading application (46% increase in engagement).",
+      "Championed web accessibility (WCAG 2.1) standards by developing reusable React components.",
+    ],
+  },
+  {
+    company: "Sprint Academy",
+    role: "Lead Technical Instructor",
+    period: "Aug 2020 - Nov 2023",
+    description:
+      "Led lectures in a classroom of 15+ consultants covering technical fundamentals and testing strategies.",
+    achievements: [
+      "Delivered well-organized lectures and assignments for 3 cohorts.",
+      "Conducted technical interviews to align consultant qualifications to client expectations.",
+    ],
+  },
+  {
+    company: "Fidelity Investments",
+    role: "Associate Software Engineer (iOS)",
+    period: "Jun 2021 - Feb 2022",
+    description:
+      "Contributed to omnichannel low-code/no-code solutions on iOS.",
+    achievements: [
+      "Migrated 4 webview account opening flows to native iOS.",
+      "Created Splunk dashboards for proactive identification of production issues.",
+    ],
+  },
+  {
+    company: "Fidelity Investments",
+    role: "Associate Software Engineer (Web)",
+    period: "Jan 2021 - Jun 2021",
+    description: "Maintained an Nx monorepo and improved software quality.",
+    achievements: [
+      "Enhanced performance and handled deployments for the monorepo.",
+      "Implemented E2E screenshot testing within Storybook, reducing defects.",
+    ],
+  },
+];
+
+const projects = [
+  {
+    title: "Goat DWD Landing Page",
+    description:
+      "Software suite to find and secure leads. Increased client leads by roughly 25% by developing a SEO-friendly landing page.",
+    tech: ["NextJS", "TailwindCSS", "SEO"],
+    link: "https://www.thegoatdwd.com/",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Temurbek Sabirov",
+  jobTitle: "Lead Software Engineer",
+  url: siteUrl,
+  sameAs: [
+    "https://www.linkedin.com/in/temursabirov",
+    "https://github.com/Temurbekk",
+  ],
+  description: siteDescription,
+  knowsAbout: ["JavaScript", "TypeScript", "React", "Software Architecture"],
+};
 ---
 
 <html lang="en" class="scroll-smooth">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+    {/* SEO Meta Tags */}
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+    <link rel="canonical" href={siteUrl} />
 
-  <meta name="generator" content={Astro.generator} />
-  <title>{siteTitle}</title>
-  <meta name="description" content={siteDescription} />
-  <meta property="og:title" content={siteTitle} />
-  <meta property="og:description" content={siteDescription} />
-  <meta property="og:url" content={Astro.url} />
-  <meta name="twitter:card" content="summary_large_image" />
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:image" content="/og-image.png" />
 
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={siteUrl} />
+    <meta property="twitter:title" content={siteTitle} />
+    <meta property="twitter:description" content={siteDescription} />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    {/* JSON-LD Structured Data */}
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </head>
   <body
-    class="bg-slate-900 text-slate-200 font-sans min-h-screen relative overflow-x-hidden"
+    class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-sky-500/30 relative"
   >
+    {/* Spotlight Effect */}
     <div
-      class="absolute top-0 right-0 w-[40rem] h-[40rem] -z-10 pointer-events-none"
-      aria-hidden="true"
+      class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+      id="spotlight"
+      style="background: radial-gradient(600px at var(--x, 100px) var(--y, 100px), rgba(29, 78, 216, 0.15), transparent 80%);"
     >
-      <div
-        class="absolute inset-0 bg-gradient-radial from-sky-700/50 via-slate-900/15 to-transparent blur-2xl opacity-75"
-      >
-      </div>
     </div>
 
-    <div
-      class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10"
-    >
-      <header class="mb-12 md:mb-16 text-center md:text-left">
+    <div class="max-w-4xl mx-auto px-6 py-20 md:py-28 relative z-10">
+      {/* Hero Section */}
+      <header class="mb-20 md:mb-28 fade-in-section">
         <h1
-          class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-100 tracking-tight"
+          class="text-4xl md:text-6xl font-bold text-slate-100 tracking-tight mb-4"
         >
           Temurbek Sabirov
-          <svg
-            height="50px"
-            width="50px"
-            fill="#ffffff"
-            class="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 ml-2 sm:ml-3 inline-block align-middle fill-current text-slate-400 animate-slow-spin"
-            viewBox="0 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"> </g>
-            <g>
-              <path
-                d="M14 2.75c-0.69 0-1.25 0.56-1.25 1.25v0 6.982l-9.866-9.866c-0.226-0.225-0.537-0.363-0.881-0.363-0.69 0-1.25 0.56-1.25 1.25 0 0.344 0.139 0.655 0.363 0.881l9.866 9.866h-6.982c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h10c0.689-0.003 1.247-0.561 1.25-1.25v-10c0-0.69-0.56-1.25-1.25-1.25v0zM17.522 15.153c0.141 0.061 0.305 0.096 0.478 0.097h10c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0h-6.981l9.866-9.866c0.226-0.226 0.366-0.539 0.366-0.884 0-0.691-0.56-1.251-1.251-1.251-0.346 0-0.658 0.14-0.885 0.367v0l-9.865 9.866v-6.982c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 10c0.002 0.517 0.316 0.96 0.764 1.15l0.008 0.003zM21.019 19.25h6.981c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0l-10.013 0.003c-0.68 0.005-1.229 0.555-1.235 1.234v0.001l-0.003 0.013v10c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-6.981l9.865 9.866c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.345-0.14-0.658-0.366-0.884l0 0zM15.154 17.523c-0.193-0.456-0.636-0.771-1.153-0.773h-10c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.982l-9.866 9.865c-0.227 0.226-0.367 0.539-0.367 0.885 0 0.691 0.56 1.251 1.251 1.251 0.345 0 0.658-0.14 0.884-0.366v0l9.866-9.866v6.981c0 0.69 0.56 1.25 1.25 1.25s1.25-0.56 1.25-1.25v0-10l-0.003-0.013c-0.001-0.168-0.036-0.327-0.097-0.473l0.003 0.008z"
-              ></path>
-            </g>
-          </svg>
         </h1>
         <h2
-          class="mt-2 text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-400"
+          class="text-xl md:text-2xl text-sky-400 font-medium mb-6 min-h-[2rem] flex items-center"
         >
-          Software Engineer
+          <span id="typing-text" class="typing-cursor"></span>
         </h2>
+        <p class="text-lg text-slate-400 max-w-2xl leading-relaxed mb-8">
+          Specializing in fullstack development, React, and scalable
+          architecture. Based in the New York Metro area, I build robust
+          applications that deliver exceptional user experiences.
+        </p>
+        <nav class="flex gap-4" aria-label="Social links">
+          {
+            socialLinks.map((link) => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="magnetic-btn p-2 text-slate-400 hover:text-sky-400 transition-colors duration-200 inline-block"
+                aria-label={link.name}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 fill-current"
+                  aria-hidden="true"
+                >
+                  <path d={link.icon} />
+                </svg>
+                <span class="sr-only">{link.name}</span>
+              </a>
+            ))
+          }
+        </nav>
       </header>
 
-      <main class="space-y-10 md:space-y-14">
-        <section aria-labelledby="about-heading">
-          <header>
-            <h3
-              id="about-heading"
-              class="text-2xl font-semibold text-slate-300 mb-4 border-b border-slate-700 pb-2"
-            >
-              About
-            </h3>
-          </header>
-          <p class="text-base sm:text-lg text-slate-400 leading-relaxed">
-            A fullstack software engineer based in the New York Metro area.
-            Currently working at JPMorgan Chase & Co. on innovative trading
-            platforms, focusing on building robust and scalable solutions.
-            Passionate about clean code, user experience, and leveraging modern
-            technologies.
-          </p>
+      <main class="space-y-24">
+        {/* Experience Section */}
+        <section class="fade-in-section" aria-labelledby="experience-heading">
+          <h3
+            id="experience-heading"
+            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8"
+          >
+            Experience
+          </h3>
+          <div class="space-y-12 stagger-container">
+            {
+              experience.map((job) => (
+                <article class="group relative grid md:grid-cols-[1fr_3fr] gap-4 md:gap-8 transition-all hover:!opacity-100 group-hover/list:opacity-50">
+                  <div class="text-sm text-slate-500 font-mono mt-1">
+                    {job.period}
+                  </div>
+                  <div class="transition-transform duration-200 ease-out p-4 -m-4 rounded-lg hover:bg-slate-800/50">
+                    <h4 class="text-lg font-semibold text-slate-100 transition-colors">
+                      {job.role} · {job.company}
+                    </h4>
+                    <p class="mt-2 text-slate-400 leading-relaxed">
+                      {job.description}
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                      {job.achievements.map((achievement) => (
+                        <li class="flex items-start text-sm text-slate-400">
+                          <span
+                            class="mr-2 mt-1.5 w-1.5 h-1.5 bg-sky-500/50 rounded-full shrink-0"
+                            aria-hidden="true"
+                          />
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
         </section>
 
-        <section aria-labelledby="links-heading">
-          <header>
-            <h3
-              id="links-heading"
-              class="text-2xl font-semibold text-slate-300 mb-4 border-b border-slate-700 pb-2"
-            >
-              Connect
-            </h3>
-          </header>
-          <ul class="list-none p-0 space-y-3">
-            <li>
-              <a
-                href={linkedInUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center text-sky-400 hover:text-sky-300 hover:underline transition-colors duration-200 group text-base sm:text-lg"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-5 h-5 mr-2 fill-current flex-shrink-0"
-                  aria-hidden="true"
-                  role="img"
-                >
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                  ></path>
-                </svg>
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center text-sky-400 hover:text-sky-300 hover:underline transition-colors duration-200 group text-base sm:text-lg"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-5 h-5 mr-2 fill-current flex-shrink-0"
-                  aria-hidden="true"
-                  role="img"
-                >
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  ></path>
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </li>
-          </ul>
+        {/* Projects Section */}
+        <section class="fade-in-section" aria-labelledby="projects-heading">
+          <h3
+            id="projects-heading"
+            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8"
+          >
+            Projects
+          </h3>
+          <div class="grid gap-6 md:grid-cols-2 stagger-container">
+            {
+              projects.map((project) => (
+                <article class="group p-6 bg-slate-900/50 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-lg transition-all hover:shadow-lg hover:shadow-sky-900/20">
+                  <div class="transition-transform duration-200 ease-out">
+                    <h4 class="text-lg font-semibold text-slate-100 group-hover:text-sky-400 transition-colors mb-2">
+                      {project.title}
+                    </h4>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                      {project.description}
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      {project.tech.map((tech) => (
+                        <span class="px-2.5 py-0.5 text-xs font-medium text-sky-300 bg-sky-900/30 rounded-full">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section class="fade-in-section" aria-labelledby="skills-heading">
+          <h3
+            id="skills-heading"
+            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8"
+          >
+            Skills
+          </h3>
+          <div class="grid gap-8 md:grid-cols-3 stagger-container">
+            <div>
+              <h4 class="text-slate-200 font-medium mb-3">Languages</h4>
+              <ul class="space-y-1.5">
+                {
+                  skills.languages.map((skill) => (
+                    <li class="text-slate-400 text-sm font-mono">{skill}</li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-slate-200 font-medium mb-3">Frameworks</h4>
+              <ul class="space-y-1.5">
+                {
+                  skills.frameworks.map((skill) => (
+                    <li class="text-slate-400 text-sm font-mono">{skill}</li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-slate-200 font-medium mb-3">Tools</h4>
+              <ul class="space-y-1.5">
+                {
+                  skills.tools.map((skill) => (
+                    <li class="text-slate-400 text-sm font-mono">{skill}</li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section class="fade-in-section" aria-labelledby="education-heading">
+          <h3
+            id="education-heading"
+            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8"
+          >
+            Education
+          </h3>
+          <div
+            class="flex justify-between items-baseline border-l-2 border-slate-800 pl-4"
+          >
+            <div>
+              <h4 class="text-lg font-semibold text-slate-100">
+                Brooklyn College
+              </h4>
+              <p class="text-slate-400">
+                Bachelor of Science in Computer Science
+              </p>
+            </div>
+            <div class="text-sm text-slate-500 font-mono">Dec 2020</div>
+          </div>
         </section>
       </main>
 
-      <footer class="mt-16 md:mt-20 pt-8 border-t border-slate-700 text-center">
-        <p class="text-sm text-slate-500">
-          Designed & Developed by Temurbek &copy; {new Date().getFullYear()}
+      <footer
+        class="mt-32 pt-8 border-t border-slate-800 text-center md:text-left fade-in-section"
+      >
+        <p class="text-sm text-slate-600">
+          &copy; {new Date().getFullYear()} Temurbek Sabirov. Built with Astro &
+          Tailwind CSS.
         </p>
       </footer>
     </div>
+
+    <script>
+      // Spotlight Effect
+      const spotlight = document.getElementById("spotlight");
+      if (spotlight) {
+        window.addEventListener("mousemove", (e) => {
+          const { clientX, clientY } = e;
+          spotlight.style.setProperty("--x", `${clientX}px`);
+          spotlight.style.setProperty("--y", `${clientY}px`);
+        });
+      }
+
+      // Scroll Animation
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+
+            // Staggered children animation
+            if (entry.target.classList.contains("stagger-container")) {
+              const children = entry.target.children;
+              Array.from(children).forEach((child, index) => {
+                (child as HTMLElement).style.opacity = "0";
+                (child as HTMLElement).style.animation =
+                  `fadeInUp 0.5s ease-out ${index * 0.1}s forwards`;
+              });
+            }
+
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in-section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Add keyframes for staggered animation dynamically
+      const styleSheet = document.createElement("style");
+      styleSheet.innerText = `
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+      document.head.appendChild(styleSheet);
+
+      // Typing Effect
+      const textToType = "Lead Software Engineer";
+      const typingElement = document.getElementById("typing-text");
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textToType.length) {
+          if (typingElement) {
+            typingElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 100);
+          }
+        }
+      }
+      // Start typing after a slight delay
+      setTimeout(type, 500);
+
+      // 3D Tilt Effect
+      const cards = document.querySelectorAll(".tilt-card");
+      cards.forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const el = e.currentTarget as HTMLElement;
+          const inner = el.querySelector(".tilt-inner") as HTMLElement;
+          const rect = el.getBoundingClientRect();
+          const x = (e as MouseEvent).clientX - rect.left;
+          const y = (e as MouseEvent).clientY - rect.top;
+
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+
+          const rotateX = ((y - centerY) / centerY) * -5; // Max rotation deg
+          const rotateY = ((x - centerX) / centerX) * 5;
+
+          inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        card.addEventListener("mouseleave", (e) => {
+          const el = e.currentTarget as HTMLElement;
+          const inner = el.querySelector(".tilt-inner") as HTMLElement;
+          inner.style.transform = "rotateX(0) rotateY(0)";
+        });
+      });
+
+      // Magnetic Buttons
+      const magnets = document.querySelectorAll(".magnetic-btn");
+      magnets.forEach((magnet) => {
+        magnet.addEventListener("mousemove", (e) => {
+          const el = e.currentTarget as HTMLElement;
+          const rect = el.getBoundingClientRect();
+          const x = (e as MouseEvent).clientX - rect.left - rect.width / 2;
+          const y = (e as MouseEvent).clientY - rect.top - rect.height / 2;
+
+          el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+
+        magnet.addEventListener("mouseleave", (e) => {
+          const el = e.currentTarget as HTMLElement;
+          el.style.transform = "translate(0, 0)";
+        });
+      });
+    </script>
   </body>
 </html>
